@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CTRE</string>
+    <string name="buscar">Buscar</string>
+    <string name="Atualizar">Atualizar</string>
+    <string name="action_config">Configuração</string>
+    <string name="action_adicionar">Adiconar</string>
+</resources>
