@@ -1,20 +1,21 @@
 package com.example.ctre
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.AlarmClock.EXTRA_MESSAGE
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Button
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.login_activity_main.*
+import kotlinx.android.synthetic.main.toolbar.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : DebugActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        this.generic_layout = layoutMenulateral
+
+        setSupportActionBar(toolbar_view)
+        configuraMenuLateral()
 
         button_sis.setOnClickListener{
 
@@ -43,7 +44,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtras(titleCursos)
             startActivity(intent)
 
-        }
+            }
 
         }
 
@@ -57,7 +58,7 @@ class MainActivity : AppCompatActivity() {
         val id = item?.itemId
 
         if (id == R.id.action_adicionar){
-            var intent = Intent(this, activityCadastro::class.java)
+            var intent = Intent(this, TelaInicialActivity::class.java)
             startActivity(intent)
         }
 
