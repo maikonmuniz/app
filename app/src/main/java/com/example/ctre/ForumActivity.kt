@@ -34,8 +34,12 @@ class ForumActivity : DebugActivity() {
     var forum = listOf<Forum>()
 
     fun taskForum(){
-        this.forum = ForumService.getForum()
-        recyclerForum?.adapter = ForumAdapter(this.forum) {onclickForum(it)}
+        Thread {
+            this.forum = ForumService.getForum()
+            runOnUiThread {
+                recyclerForum?.adapter = ForumAdapter(this.forum) { onclickForum(it) }
+            }
+        }.start()
     }
 
     fun onclickForum(forum: Forum){

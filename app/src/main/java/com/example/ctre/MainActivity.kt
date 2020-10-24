@@ -62,8 +62,6 @@ class MainActivity : DebugActivity() {
             startActivity(intent)
         }
 
-
-
         else if (id == R.id.action_config){
             var intent = Intent(this, ConfiguracaoActivity::class.java)
             startActivity(intent)
@@ -71,6 +69,11 @@ class MainActivity : DebugActivity() {
 
         else if (id  == R.id.action_sair){
             finish()
+        }
+
+        else if (id == R.id.action_nova){
+            val intent = Intent(this, NovoForumActivity::class.java)
+            startActivity(intent)
         }
 
         return super.onOptionsItemSelected(item)

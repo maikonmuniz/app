@@ -10,6 +10,12 @@
         />
 
     <item
+        android:id="@+id/action_nova"
+        android:icon="@drawable/ic_adicionar_black"
+        android:title="@string/action_nova"
+        />
+
+    <item
         android:id="@+id/action_adicionar"
         android:title="@string/action_adicionar"
         app:showAsAction="always"

@@ -1,5 +1,6 @@
 package com.example.ctre
 
+import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -38,12 +39,17 @@ class ForumAdapter(
     }
 
     override fun onBindViewHolder(holder: ForumViewHolder, posicao: Int) {
+        val context = holder.itemView.context
         val forum = this.foros[posicao]
 
         holder.cardNome.text = forum.nome
         holder.cardProgress.visibility = View.VISIBLE
 
-        Picasso.with(holder.itemView.context).load(forum.foto).fit().into(holder.cardImg,
+        val resources: Resources = context.resources
+        val resourceId: Int = resources.getIdentifier(forum.foto, "drawable", context.packageName)
+        holder.cardImg.setImageResource(resourceId)
+
+        Picasso.with(context).load(forum.foto).fit().into(holder.cardImg,
         object: com.squareup.picasso.Callback{
             override fun onSuccess() {
                 holder.cardProgress.visibility = View.GONE

@@ -12,4 +12,5 @@
     <string name="nav_abrir">Abrir</string>
     <string name="nav_fechar">Fechar</string>
     <string name="nav_inicial">Inicio</string>
+    <string name="action_nova">Novo Forúm</string>
 </resources>
