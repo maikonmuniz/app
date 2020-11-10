@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CTRE</string>
+    <string name="buscar">Buscar</string>
+    <string name="Atualizar">Atualizar</string>
+    <string name="action_config">Configuração</string>
+    <string name="action_adicionar">Adiconar</string>
+    <string name="nav_cursos">Cursos</string>
+    <string name="nav_telainicial">Tela inicial</string>
+    <string name="nav_forum">Forum</string>
+    <string name="nav_sair">Sair</string>
+    <string name="livros">Livros</string>
+    <string name="nav_abrir">Abrir</string>
+    <string name="nav_fechar">Fechar</string>
+    <string name="nav_inicial">Inicio</string>
+    <string name="action_nova">Novo Forúm</string>
+
+    <string name="API_KEY">AIzaSyAQKwO5_ShZhv3DrS-DeVq4SO0zYH1Hwj4</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/nav_telainicial"
+            android:icon="@drawable/ic_cad"
+            android:title="@string/nav_inicial"
+            android:checked="true"
+            />
+
+        <item
+            android:id="@+id/nav_forum"
+            android:icon="@drawable/ic_forum_black"
+            android:title="@string/nav_forum"
+            />
+
+        <item
+            android:id="@+id/nav_livros"
+            android:icon="@drawable/ic_book"
+            android:title="@string/livros"
+            />
+
+        <item
+            android:id="@+id/nav_localizacao"
+            android:icon="@drawable/ic_localization"
+            android:title="Localização"
+            tools:ignore="HardcodedText" />
+
+        <item
+            android:id="@+id/nav_sair"
+            android:icon="@drawable/logout_icon"
+            android:title="@string/nav_sair"
+            />
+    </group>
+</menu>
